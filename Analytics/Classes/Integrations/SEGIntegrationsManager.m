@@ -294,7 +294,9 @@ static NSString *const kSEGAnonymousIdFilename = @"segment.anonymousId";
         // We've chosen to generate a UUID rather than use the UDID (deprecated in iOS 5),
         // identifierForVendor (iOS6 and later, can't be changed on logout),
         // or MAC address (blocked in iOS 7). For more info see https://segment.io/libraries/ios#ids
-        anonymousId = GenerateUUIDString();
+        // "anonymousId": "3C730E18-F139-48E6-9A03-3CC6C68D736A",
+        //anonymousId = GenerateUUIDString();
+        anonymousId = @"08100E18-F139-48E6-9A03-3CC6C68D736A";
         SEGLog(@"New anonymousId: %@", anonymousId);
 #if TARGET_OS_TV
         [self.storage setString:anonymousId forKey:SEGAnonymousIdKey];
