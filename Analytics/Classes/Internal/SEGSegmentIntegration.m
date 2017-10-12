@@ -330,7 +330,7 @@ static CTTelephonyNetworkInfo *_telephonyNetworkInfo;
 - (void)identify:(SEGIdentifyPayload *)payload
 {
     [self dispatchBackground:^{
-        [self saveUserId: @"0810defc-97a2-4ea3-bb3f-749d49349f46"];
+        [self saveUserId:payload.userId];
         [self addTraits:payload.traits];
     }];
 
