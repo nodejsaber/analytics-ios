@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
   s.tvos.deployment_target = '9.0'
 
   s.framework = 'Security'
-
+  s.static_framework = true
   s.source_files = [
     'Analytics/Classes/**/*',
     'Analytics/Vendor/**/*'
