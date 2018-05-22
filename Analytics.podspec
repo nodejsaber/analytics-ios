@@ -21,6 +21,7 @@ Pod::Spec.new do |s|
   s.static_framework = true
   s.source_files = [
     'Analytics/Classes/**/*',
-    'Analytics/Vendor/**/*'
+    'Analytics/Vendor/**/*',
+    'Analytics/Analytics.h'
   ]
 end
